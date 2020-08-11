@@ -4,15 +4,17 @@ public class Destination {
     private String name;
     private String location;
     private String description;
-    private String thumbnail;
     private String image;
+    private String latitude;
+    private String longitude;
 
-    public Destination(String name, String location, String description, String thumbnail, String image) {
+    public Destination(String name, String location, String description, String image, String latitude, String longitude) {
         this.name = name;
         this.location = location;
         this.description = description;
-        this.thumbnail = thumbnail;
         this.image = image;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
     public String getName() {
@@ -39,19 +41,27 @@ public class Destination {
         this.description = description;
     }
 
-    public String getThumbnail() {
-        return thumbnail;
-    }
-
-    public void setThumbnail(String thumbnail) {
-        this.thumbnail = thumbnail;
-    }
-
     public String getImage() {
         return image;
     }
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
+
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
     }
 }

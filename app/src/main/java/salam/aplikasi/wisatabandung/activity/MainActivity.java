@@ -28,7 +28,7 @@ import java.util.List;
 import salam.aplikasi.wisatabandung.R;
 import salam.aplikasi.wisatabandung.fragment.AboutFragment;
 import salam.aplikasi.wisatabandung.fragment.PersonFragment;
-import salam.aplikasi.wisatabandung.fragment.WisataFragment;
+import salam.aplikasi.wisatabandung.fragment.DestinationFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     loadFragment(fragment);
                     return true;
                 case R.id.wisata:
-                    fragment = new WisataFragment();
+                    fragment = new DestinationFragment();
                     loadFragment(fragment);
                     return true;
                 case R.id.tentang:

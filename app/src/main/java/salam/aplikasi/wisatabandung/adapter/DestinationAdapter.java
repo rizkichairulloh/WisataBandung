@@ -17,7 +17,7 @@ import com.bumptech.glide.Glide;
 import java.util.List;
 
 import salam.aplikasi.wisatabandung.R;
-import salam.aplikasi.wisatabandung.activity.WisataDetailActivity;
+import salam.aplikasi.wisatabandung.activity.DestinationDetailActivity;
 import salam.aplikasi.wisatabandung.model.Destination;
 
 public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.ViewHolder> {
@@ -47,7 +47,7 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
         viewHolder.menu.setText(pesanan.getLocation());
 
         Glide.with(context)
-                .load(pesanan.getThumbnail())
+                .load(pesanan.getImage())
                 .fitCenter()
                 .into(viewHolder.imageView);
 
@@ -55,11 +55,13 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
             @Override
             public void onClick(View v) {
                 Context context = v.getContext();
-                Intent intent = new Intent(context, WisataDetailActivity.class);
+                Intent intent = new Intent(context, DestinationDetailActivity.class);
                 intent.putExtra("name", pesanan.getName());
                 intent.putExtra("location", pesanan.getLocation());
                 intent.putExtra("description", pesanan.getDescription());
-                intent.putExtra("image", pesanan.getThumbnail());
+                intent.putExtra("image", pesanan.getImage());
+                intent.putExtra("lat", pesanan.getLatitude());
+                intent.putExtra("long", pesanan.getLongitude());
                 context.startActivity(intent);
             }
         });

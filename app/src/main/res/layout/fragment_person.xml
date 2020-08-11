@@ -13,10 +13,10 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/img_avatar"
+            android:id="@+id/imgAvatar"
             android:layout_gravity="center"
-            android:layout_width="104dp"
-            android:layout_height="104dp"
+            android:layout_width="170dp"
+            android:layout_height="300dp"
             android:src="@drawable/ic_baseline_account_circle_24"
             android:background="#00000000" />
 
@@ -26,7 +26,7 @@
             android:textColor="@android:color/black"
             android:layout_marginTop="20dp"
             android:visibility="visible"
-            android:text="John Doe"
+            android:text="Hari kurniawan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -36,7 +36,7 @@
             android:textColor="@android:color/black"
             android:layout_marginTop="10dp"
             android:visibility="visible"
-            android:text="1301168303"
+            android:text="10117269"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -46,7 +46,7 @@
             android:textColor="@android:color/black"
             android:layout_marginTop="10dp"
             android:visibility="visible"
-            android:text="IF-40-01"
+            android:text="IF-8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
